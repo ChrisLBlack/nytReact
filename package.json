@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/ChrisLBlack/nytReact/issues"
   },
-  "homepage": "https://github.com/ChrisLBlack/nytReact#readme"
+  "homepage": "https://github.com/ChrisLBlack/nytReact#readme",
+  "dependencies": {
+    "mongoose": "^5.3.4"
+  }
 }

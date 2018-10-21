@@ -1,10 +1,21 @@
-import React, { Component } from 'react';
-import './App.css';
+import React from "react";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import Articles from "./pages/articles";
+import NoMatch from "./pages/NoMatch";
+import Nav from "./components/Nav";
 
-class App extends Component {
-  render() {
-    return 
-  }
-}
+const App = () => (
+  <Router>
+    <div>
+      <Nav />
+      <Switch>
+        <Route exact path="/" component={Articles} />
+        <Route exact path="/books" component={Articles} />
+        <Route component={NoMatch} />
+      </Switch>
+    </div>
+  </Router>
+);
 
 export default App;
+
